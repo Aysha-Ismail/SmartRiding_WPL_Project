@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book yor ride</title>
+</head>
+
+
+<style>
+    body {
+        background-color: rgb(36, 35, 35);
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .middle {
+        display: block;
+        width: auto;
+        margin: 0px auto;
+        border: 2px solid black;
+        color: white;
+        background-color: black;
+        font-size: larger;
+        border-width: 4px;
+        border-radius: 0px;
+        border-radius: 0px;
+        padding: 0px 27px;
+    }
+
+
+    #p {
+        padding: 0px 104px;
+    }
+
+    .right {
+        display: inline-block;
+        color: white;
+        position: absolute;
+        right: 154px;
+        top: 11px;
+        font-size: 35px;
+        border-width: 22px;
+        border-radius: 37px;
+    }
+
+
+    .btn {
+        margin: 4px 8px;
+        color: white;
+        background-color: black;
+        padding: 0px 0px;
+        font-size: 17px;
+        border: 2px solid black;
+        border-radius: 12px;
+        border-width: 10px;
+        cursor: pointer;
+    }
+
+
+
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+            padding: 4px 25px;
+            text-decoration: none;
+        }
+
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+            }
+
+
+                .navbar li a:hover {
+                    color: grey;
+                }
+
+    .container {
+        margin: 12px 12px;
+        padding: 53px 778px;
+        width: 45%;
+        border-radius: 8px;
+    }
+
+        .container h1 {
+            font-size: 37px;
+        }
+
+        .container p {
+            font-size: 20px;
+        }
+
+
+    .ww {
+        text-align: center;
+        border: 2px solid grey;
+        width: 87%;
+        height: 22%;
+        background-color: rgb(70, 69, 69);
+        border-radius: 0%;
+        border-radius: 19px;
+        padding: 66px 56px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+
+    input[type="text"] {
+        flex: 1;
+        padding: 18px 46px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button[type="submit"] {
+        padding: 7px 27px;
+        font-size: 16px;
+        background-color: #0c0d0f;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flow-root;
+        width: 25%;
+        border-width: 2px;
+    }
+
+
+        button[type="submit"]:hover {
+            background-color: gray;
+        }
+
+
+    .settle {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 78px;
+    }
+
+
+    .section {
+        flex: 1;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 12px 111px;
+        margin-right: 14px;
+        height: 155px;
+        border-width: 8px;
+    }
+
+        .section:last-child {
+            margin-right: 0;
+        }
+
+        .section img {
+            width: 145px;
+            height: 155px;
+            cursor: pointer;
+        }
+
+        .section h5 {
+            text-align: center;
+        }
+
+
+
+    .section1 {
+        flex: 1;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 0px -13px;
+        margin-right: 16px;
+        height: 155px;
+        border-width: 10px;
+    }
+
+        .section1:last-child {
+            margin-right: 0;
+        }
+
+        .section1 img {
+            width: 219px;
+            height: 160px;
+            cursor: pointer;
+        }
+
+        .section1 h5 {
+            text-align: center;
+        }
+
+        .section1 p {
+            text-align: center;
+        }
+
+    .btn {
+        margin: 18px -179px;
+        color: white;
+        background-color: black;
+        padding: 0px 73px;
+        font-size: 17px;
+        border: 2px solid black;
+        border-radius: 12px;
+        border-width: 0px;
+        cursor: pointer;
+    }
+
+    #sign3 {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+
+
+
+    .btn1 {
+        margin: 17px 50px;
+        color: white;
+        background-color: black;
+        padding: 4px 274px;
+        font-size: 17px;
+        border: 2px solid black;
+        border-radius: 12px;
+        border-width: 6px;
+        cursor: pointer;
+    }
+
+    #sign1:hover {
+        background-color: rgb(19, 18, 18);
+        border: 1px solid rgb(19, 18, 18);
+        border-width: 6px;
+        border-radius: 12px;
+    }
+
+    #search-input {
+        border: 1px solid black;
+        border-width: 2px;
+    }
+
+
+
+
+    #quene {
+        text-align: center;
+        border: 1px solid black;
+        background-color: grey;
+        width: 900px;
+        margin: 45px auto;
+    }
+
+    #search-inputl {
+        border-width: 4px;
+    }
+
+
+    #align {
+        color: white;
+    }
+
+    .hover-color {
+        transition: filter 0.3s;
+    }
+
+
+        .hover-color:hover {
+            filter: brightness(1.2);
+        }
+
+        #Booking_Details{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        hr.class="custom-hr"{
+            height: 3px; 
+    background-color: black;
+    border: none; 
+    margin: 20px 0; 
+        }
+</style>
+
+
+<body>
+
+    <header class="header">
+
+
+
+        <div class="middle">
+
+
+            <ul class="navbar">
+                <li><a href="./Rides.html" class="active">Rides</a></li>
+                <li><a href="./Delivery.html">Delivery</a></li>
+
+
+
+
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="right">
+
+            <a href="./Homepage.html"><button class="btn" id="sign">Go back</button></a>
+
+
+        </div>
+
+
+
+    </header>
+
+
+    <div class="continer" id="quene">
+
+
+
+
+
+
+        <div class="ww">
+
+            
+
+            <form action="/search" method="get">
+
+                <h3>Before booking, please visit this form above.</h3>
+                <br />
+                <a id="Booking_Details" href="./BookingWebForm.aspx">Booking Details</a>
+                
+                <hr class="custom-hr" />
+
+                <br />
+                <br />
+                <label id="align" for="search-input"><strong>Pickup Point:</strong></label>
+                <input type="text" id="search-input" name="q" placeholder="Enter your Pickup point" required>
+
+
+                <br>
+                <br>
+
+                <label id="align" for="search-input"><strong>Destination:</strong></label>
+                <input type="text" id="search-input" name="q" placeholder="Enter your Destination" required>
+            </form>
+
+            <br>
+            <br>
+
+            <a href="https://www.google.com/maps?q=latitude,longitude" target="_blank"><button id="sign1" class="btn1">Find a driver</button></a>
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <h2><i>-----------Services-----------</i></h2>
+
+        <div class="settle">
+
+
+            <div class="section">
+                <img id="a" class="hover-color" src="./car1.png" alt="No image found">
+                <p>Book your ride now</p>
+
+                <h5>Ride</h5>
+
+
+                <p>Book your ride now</p>
+            </div>
+            <div class="section">
+                <img id="b" class="hover-color" src="./ok1.PNG" alt="No image found">
+                <p>**Arriving soon**</p>
+
+                <h5> Delivery</h5>
+            </div>
+
+
+
+        </div>
+
+
+        <h2><i>-----------Products-----------</i></h2>
+
+        <div class="settle">
+
+
+            <div class="section1">
+                <img id="c" class="hover-color" src="eats.PNG" />
+                
+                <p>Enjoy the meal</p>
+
+                <h5><strong>Eat</strong></h5>
+            </div>
+            <div class="section1">
+                <img id="d" class="hover-color" src="./bussiness.PNG" alt="No image found">
+                <p>Join this platform</p>
+
+                <h5> <strong>Business</strong></h5>
+            </div>
+
+            <div class="section1">
+                <img id="e" class="hover-color" src="./money.png" alt="No image found">
+                <p>Do the payments</p>
+
+                <h5> <strong>Money</strong></h5>
+            </div>
+            <br>
+            <br>
+
+            <br>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+
+    <script>
+    alert("Hurry up! 10% discount on every ride.")
+    </script>
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="./booking.js"></script>
+
+
+
+
+
+</body>
+</html>

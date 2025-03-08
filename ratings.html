@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings and Reviews</title>
+</head>
+
+<style>
+    body {
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .middle {
+        display: block;
+        width: auto;
+        margin: -1px auto;
+        border: 2px solid black;
+        color: white;
+        background-color: black;
+        font-size: larger;
+        border-width: 4px;
+        border-radius: 0px;
+        border-radius: 0px;
+        padding: 20px 91px;
+    }
+
+
+    #p {
+        padding: 0px 0px;
+    }
+
+    .right {
+        display: inline-block;
+        color: white;
+        position: absolute;
+        right: 154px;
+        top: 11px;
+        font-size: 35px;
+        border-width: 22px;
+        border-radius: 37px;
+    }
+
+
+    .btn {
+        margin: 4px 8px;
+        color: white;
+        background-color: black;
+        padding: 0px 0px;
+        font-size: 17px;
+        border: 2px solid black;
+        border-radius: 12px;
+        border-width: 10px;
+        cursor: pointer;
+    }
+
+    #sign:hover {
+        background-color: gray;
+        border: 2px solid gray;
+        border-width: 10px;
+        border-radius: 10px;
+    }
+
+
+
+    .con {
+        border: 2px solid white;
+        border-radius: 12px;
+        padding: 0px 95px;
+        margin: -40px auto;
+        background-color: rgb(246, 246, 248);
+    }
+
+
+    .rating {
+        display: inline-block;
+        direction: rtl;
+    }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            background: url('./star1.PNG');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+
+        .rating input:checked ~ label {
+            background: url('./filledstar1.PNG');
+            background-size: cover;
+        }
+
+
+    .con1 {
+        border-radius: 12px;
+        padding: 8px 95px;
+        margin: auto;
+    }
+
+
+        .con1 img {
+            padding: 5px 0px;
+            width: 10%;
+        }
+
+
+    #profile1 {
+        padding: 0px 0px;
+        width: 2%;
+    }
+
+
+    h4 {
+        cursor: pointer;
+    }
+
+    h3 {
+        padding: 2px 2px;
+        text-decoration: underline;
+    }
+
+    #pro {
+        padding: 7px 50px;
+        width: 7%;
+        margin: -24px auto;
+    }
+
+    #p {
+        text-decoration: underline;
+    }
+</style>
+<body>
+
+    <header class="header">
+
+
+        <div class="middle">
+            See Reviews and Ratings
+
+        </div>
+
+        <div class="right">
+
+            <a href="./Homepage.html"><button class="btn" id="sign">Go back</button></a>
+
+
+        </div>
+
+
+    </header>
+    <br><br>
+    <br><br>
+
+    <div class="container">
+
+
+        <div class="con">
+
+            <h3>Add your comment</h3>
+
+            <img id="pro" src="./myprofile.PNG" alt="">
+            <p id="p">Share your experience with us</p>
+            <br>
+            <form>
+
+                <label><strong>Your Name:</strong></label>
+                <input type="Text" name="myText" placeholder="Your Name">
+                <br>
+                <br>
+                <label><strong>Your Email:</strong></label>
+                <input type="Text" name="myText" placeholder="Your Email">
+
+
+                <br>
+
+
+                <div class="rating">
+
+
+                    <br> <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1"></label>
+
+                </div>
+
+
+                <br>
+                <br>
+
+
+                <label><strong>Give review:</strong></label>
+                <br>
+                <br>
+                <textarea name="myTextarea" cols="57" rows="8">Give your review here..</textarea>
+                <br>
+                <br>
+
+            </form>
+
+
+
+            <script>
+
+                const ratingStars = document.querySelectorAll('.rating label');
+
+                ratingStars.forEach(star => {
+                  star.addEventListener('mouseenter', function() {
+                    const selectedStars = this.previousElementSibling;
+                    selectedStars.checked = true;
+                  });
+
+                  star.addEventListener('mouseleave', function() {
+                    const checkedStars = document.querySelector('.rating input:checked');
+                    if (!checkedStars) {
+                      selectedStars.checked = false;
+                    }
+                  });
+                });
+
+
+            </script>
+
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+      
+
+        <div class="con1">
+
+            <h3>Comment Section</h3>
+
+            <br>
+
+
+            <div>
+                <img id="profile1" src="./profile1.PNG" alt="">
+                Zainab Tanveer <br>
+                <i>ztzainab23@gmail.com</i> <br>
+                <img src="./st1.PNG" alt=""> <br>
+                <p>Uber is the best choice to ride your way! Highly recommended.</p>
+            </div>
+
+            <br>
+            <br>
+            <div>
+                <img id="profile1" src="./profile2.PNG" alt="">
+                Sufiyan Sheikh <br>
+                <i>SheikhSufyan@Yahoo.com</i> <br>
+                <img src="./st2.PNG" alt=""> <br>
+                <p>Good experience.</p>
+            </div>
+
+
+
+            <br>
+            <br>
+            <div>
+                <img id="profile1" src="./profile3.PNG" alt="">
+                Ali Abid Khan <br>
+                <i>KhanShahab@hotmail.com</i> <br>
+                <img src="./st3.PNG" alt=""> <br>
+                <p>Exceptional ride experience with Uber - prompt, courteous driver and a comfortable, clean vehicle.</p>
+            </div>
+
+
+
+
+            <h4>See more comments.. </h4>
+
+            <div class="con2" id="con2">
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile10.PNG" alt="">
+                    Nabeel Shahid <br>
+                    <i>Shahid98@gmail.com</i> <br>
+                    <img src="./st3.PNG" alt=""> <br>
+                    <p>A fantastic Uber ride - the driver's excellent service and navigation skills made for a stress-free trip.</p>
+
+                </div>
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile11.PNG" alt="">
+                    Sarah Fatima <br>
+                    <i>Simsam@gmail.com</i> <br>
+                    <img src="./st8.PNG" alt=""> <br>
+                    <p>Average.</p>
+
+                </div>
+
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile4.PNG" alt="">
+                    Sarah Ilyaas <br>
+                    <i>Sarah184@gmail.com</i> <br>
+                    <img src="./st4.PNG" alt=""> <br>
+                    <p>Impressed by the professional service from my Uber driver - safe, efficient, and friendly.</p>
+                </div>
+
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile51.PNG" alt="">
+                    Sohail Zahid <br>
+                    <i>Rajput22@gmail.com</i> <br>
+                    <img src="./st1.PNG" alt=""> <br>
+                    <p>I recently had the pleasure of using Uber for a ride, and I must say, the experience was exceptional. The driver arrived promptly, and the vehicle was clean and comfortable. Throughout the journey, the driver displayed a high level of professionalism and courtesy, making me feel at ease. They navigated efficiently, ensuring that I reached my destination on time. This positive encounter reaffirms my trust in Uber's reliable service, and I'll undoubtedly continue to choose them for my transportation needs.</p>
+                </div>
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile6.PNG" alt="">
+                    Asma Baggia <br>
+                    <i>AsmaBaggia@yahoo.com</i> <br>
+                    <img src="./st5.PNG" alt=""> <br>
+                    <p>Overall, the experience was good with the rider.</p>
+                </div>
+
+
+
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile7.PNG" alt="">
+                    Sameena Aftab <br>
+                    <i>S12Aftab@gmail.com</i> <br>
+                    <img src="./st3.PNG" alt=""> <br>
+                    <p>Uber never disappoints - the driver's hospitality and the seamless ride experience are commendable..</p>
+                </div>
+
+
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile8.PNG" alt="">
+                    Muhammad Sarim Faizan <br>
+                    <i>Sarim09@gmail.com</i> <br>
+                    <img src="./st7.PNG" alt=""> <br>
+                    <p>My recent Uber ride was undoubtedly the worst experience I've had with the service. The driver arrived significantly late, and the condition of the vehicle was far from satisfactory – it was unclean and seemed poorly maintained. The ride itself was uncomfortable due to the driver's reckless driving and lack of attention to road etiquette. Communication was also a challenge, as the driver appeared disinterested in providing any information or assistance. This encounter has left me highly disappointed and reconsidering whether to continue using Uber in the future, as it failed to meet even the basic standards of a comfortable and safe ride.</p>
+                </div>
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile9.PNG" alt="">
+                    Ayesha Batool <br>
+                    <i>Aisha4511@hotmail.com</i> <br>
+                    <img src="./st8.PNG" alt=""> <br>
+                    <p>Not much satisfied..</p>
+
+                </div>
+
+                <br>
+                <br>
+                <div>
+                    <img id="profile1" src="./profile1.PNG" alt="">
+                    Zunaira Shakeel <br>
+                    <i>Zu@gmail.com</i> <br>
+                    <img src="./st6.PNG" alt=""> <br>
+                    <p>Good experience and a safe ride.</p>
+
+                </div>
+
+                <h4 id="h4">See less comments..</h4>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="./ratings.js"></script>
+
+
+</body>
+</html>

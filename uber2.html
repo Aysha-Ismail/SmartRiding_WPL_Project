@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber</title>
+</head>
+
+<style>
+    body {
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .left {
+        display: inline-block;
+        color: white;
+        position: absolute;
+        left: 90px;
+        top: -10px;
+        font-size: larger;
+        border-width: 22px;
+        border-radius: 37px;
+    }
+
+        .left h1 {
+            width: 53px;
+            padding: 0px 0px;
+        }
+
+    .middle {
+        display: block;
+        width: auto;
+        margin: 0px auto;
+        border: 2px solid black;
+        color: white;
+        background-color: black;
+        font-size: larger;
+        border-width: 36px;
+        border-radius: 0px;
+        border-radius: 0px;
+        padding: 0px 27px;
+    }
+
+
+
+    .right {
+        display: inline-block;
+        color: white;
+        position: absolute;
+        right: 154px;
+        top: 11px;
+        font-size: 35px;
+        border-width: 22px;
+        border-radius: 37px;
+        border: 1px solid black;
+    }
+
+    #sign3 {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+
+
+    .btn {
+        margin: 18px -179px;
+        color: black;
+        background-color: white;
+        padding: 0px 0px;
+        font-size: 17px;
+        border: 2px solid white;
+        border-radius: 12px;
+        border-width: 10px;
+        cursor: pointer;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .aye {
+        text-align: center;
+        border: 2px solid white;
+        width: 87%;
+        height: 22%;
+        background-color: white;
+        padding: 62px 79px;
+    }
+
+        .aye h2 {
+            font-size: 29px;
+        }
+
+    .cont {
+        background-color: black;
+        color: white;
+        width: 424px;
+        height: 54px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+
+
+    fieldset {
+        padding: 6px 91px;
+        width: -1%;
+        display: inline-block;
+        border: 1px solid black;
+        border-width: 1px;
+        border-radius: 12px;
+    }
+
+    a {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        border: 1px solid rgb(191, 191, 245);
+        border-width: 1px;
+        padding: 9px 110px;
+        background-color: rgb(230, 230, 243);
+    }
+
+        a:hover {
+            color: #3367D6;
+        }
+
+        a img {
+            width: 22px;
+            padding: 0px 4px;
+        }
+
+
+    .sam {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        border: 1px solid rgb(191, 191, 245);
+        border-width: 1px;
+        padding: 9px 116px;
+        background-color: rgb(230, 230, 243);
+    }
+
+    .ai {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        border: 1px solid rgb(191, 191, 245);
+        border-width: 1px;
+        padding: 9px 101px;
+        background-color: rgb(230, 230, 243);
+    }
+</style>
+
+<body>
+
+
+    <header class header>
+        <div class="left">
+
+            <h1>Uber</h1>
+            <!-- <img src="./l.PNG" alt="No image found"> -->
+        </div>
+
+        <div class="middle">
+
+        </div>
+
+        <div class="right">
+            <a href="./Userprofile.html"><button class="btn" id="sign3">Exit</button></a>
+        </div>
+
+
+
+
+    </header>
+
+    <br>
+
+    <div class="container">
+
+
+        <div class="aye">
+
+            <h2>What's your phone number or email?</h2>
+
+            <form action="backend.php">
+
+
+                <div>
+                    <textarea name="myText" cols="55" rows="3">Enter your email or number</textarea>
+                </div>
+
+                <br>
+
+                <button class="cont">Continue</button>
+
+                <br>
+
+
+
+
+                <br>
+
+                <fieldset>
+                    <legend class field>Or</legend>
+
+
+
+                    <br>
+                    <br>
+
+
+
+
+                    <a href="https://www.google.com" target="_blank"> <img src="./go.PNG" alt="Error"> Continue with Google</a>
+                    <br><br>
+                    <a class="sam" href="https://www.apple.com" target="_blank"> <img src="./apple.PNG" alt="Error"> Continue with Apple</a>
+                    <br><br>
+                    <a class="ai" href="https://www.facebook.com" target="_blank"> <img src="./facebook.PNG" alt="Error"> Continue with Facebook</a>
+
+
+                    <br>
+
+                    <br>
+                    <br>
+
+
+
+                </fieldset>
+
+
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

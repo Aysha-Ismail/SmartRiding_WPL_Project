@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile|Account</title>
+</head>
+
+<style>
+        body {
+            
+            background-image: url('./bgp.PNG');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .middle {
+            display: block;
+            width: auto;
+            margin: 0px auto;
+            border: 2px solid black;
+            color: white;
+            background-color: black;
+            font-size: larger;
+            border-width: 4px;
+            border-radius: 0px;
+            border-radius: 0px;
+            padding: 0px 27px;
+        }
+
+
+        #p {
+            padding: 0px 104px;
+        }
+
+        .right {
+            display: inline-block;
+            color: white;
+            position: absolute;
+            right: 154px;
+            top: 11px;
+            font-size: 35px;
+            border-width: 22px;
+            border-radius: 37px;
+        }
+
+
+
+        .imageright {
+            display: inline-block;
+            padding: 12px 12px;
+            position: absolute;
+            right: 433px;
+            top: 1px;
+        }
+
+            .imageright img {
+                width: 14%;
+                padding: 89px 174px;
+            }
+
+        .btn {
+            margin: 4px 8px;
+            color: white;
+            background-color: black;
+            padding: 0px 0px;
+            font-size: 17px;
+            border: 2px solid black;
+            border-radius: 12px;
+            border-width: 10px;
+            cursor: pointer;
+        }
+
+        #sign:hover {
+            background-color: gray;
+            border: 2px solid gray;
+            border-width: 10px;
+            border-radius: 10px;
+        }
+
+
+
+
+        #myh2 {
+            padding: 0px 497px;
+        }
+
+        #myp {
+            padding: 0px 496px;
+        }
+
+
+        .profile, .settings {
+            background-color: rgb(250, 250, 252);
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(141, 140, 140);
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+
+        .section1 {
+            background-color: rgb(250, 250, 252);
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(141, 140, 140);
+        }
+
+
+
+
+        .container {
+            width: 0px;
+            padding: 0px 0px;
+        }
+
+
+        h1 {
+            color: black;
+            padding: 8px 12px;
+        }
+
+
+        .se {
+            padding: 26px 69px;
+            width: 11%;
+            margin: -81px;
+        }
+
+
+        h3 {
+            padding: 14px 0px;
+        }
+
+
+        .horizontal-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid rgb(250, 250, 252);
+            box-shadow: 0 2px 5px rgb(143, 141, 141);
+        }
+
+        #safe {
+            width: 21%;
+            padding: 23px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+
+        
+        .section-item {
+            width: 8%;
+            padding: 21px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 5px rgb(203 28 28);
+            cursor: pointer;
+        }
+
+            .section-item:hover {
+                transform: translateX(-10px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                background-color: #a52e2e;
+            }
+
+
+
+        #sectionitemid {
+            width: 87px;
+            padding: 0px -2px;
+        }
+
+
+        #sectionitemid1 {
+            width: 93px;
+            padding: -1px -5px;
+        }
+
+        #sectionitemid2 {
+            width: 98px;
+            padding: 6px -6px;
+        }
+
+        #sectionitemid3 {
+            width: 78px;
+            padding: -8px 16px;
+        }
+
+        #p-p {
+            padding: 8px 15px;
+        }
+
+
+        #p-image {
+            padding: 2px 114px;
+            width: 37%;
+        }
+
+
+        .button {
+            border: 1px solid rgb(250, 250, 252);
+            padding: 0px 0px;
+            background-color: rgb(250, 250, 252);
+            cursor: pointer;
+        }
+
+
+
+
+
+        .con1 {
+            border-radius: 12px;
+            padding: 8px 115px;
+            margin: auto;
+            background-color: white;
+        }
+
+        #setting-image {
+            width: 77%;
+            padding: 0px -11px;
+        }
+
+
+        #setting-image-p {
+            white-space: nowrap;
+        }
+
+            #setting-image-p:hover {
+                color: #a52e2e;
+            }
+
+
+
+        .bt1 {
+            display: flex;
+            width: 2%;
+            padding: 0px 0px;
+            align-items: center;
+            border: 1px solid white;
+            background-color: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+            .bt1 img {
+                margin-right: 30px;
+            }
+
+        hr {
+            box-shadow: brown;
+            width: 83%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+</style>
+<body>
+
+    <header class="header">
+
+
+        <div class="middle">
+            <p id="p">My Profile Account</p>
+        </div>
+
+        <div class="right">
+
+            <a href="./Homepage.html"><button class="btn" id="sign">Go back</button></a>
+
+
+        </div>
+
+
+
+    </header>
+
+
+    <main>
+        <section class="profile">
+            <h2 id="myh2">Ayesha Ismail</h2>
+            <p id="myp">Email: ayeshaismail44@gmail.com</p>
+            <p id="myp">03232719429</p>
+
+            <div class="imageright">
+                <img src="./accountprofile.PNG" alt="Profile Picture">
+
+
+            </div>
+        </section>
+    </main>
+
+    <br>
+
+    <section class="profile">
+
+        <section class="horizontal-section">
+            <div class="section-item" id="safe">
+                <h2>Uber cash</h2>
+                <p><strong>PKR 9.00</strong></p>
+
+            </div>
+
+            <div class="section-item">
+                <img id="sectionitemid" src="./pay.PNG" alt="">
+
+            </div>
+
+            <div class="section-item">
+                <img id="sectionitemid" src="./paypal.PNG" alt="">
+
+            </div>
+
+
+            <div class="section-item">
+                <img id="sectionitemid" src="./visa.PNG" alt="">
+
+            </div>
+
+
+            <div class="section-item">
+                <img id="sectionitemid1" src="./c1.PNG" alt="">
+
+            </div>
+
+
+            <div class="section-item">
+                <img id="sectionitemid2" src="./m1.PNG" alt="">
+
+            </div>
+
+
+            <div class="section-item">
+                <img id="sectionitemid3" src="./g1.PNG" alt="">
+
+            </div>
+
+
+
+        </section>
+
+
+        </div>
+    </section>
+
+
+    <section class="profile">
+
+        <section class="horizontal-section">
+            <h2 id="h2-2">Safety checkup</h2>
+
+            <p id="p-p">Boost yor safety profile by turning on additional features.. <strong>CLICK HERE <img src="./forwardarrow.PNG" alt=""></strong></p>
+            <a href="./Userprofileform.html">
+                <button class="button">
+                    <img id="p-image" src="./15.PNG" alt="">
+                </button>
+            </a>
+        </section>
+
+    </section>
+
+    <hr>
+    <div class="con1">
+
+
+        <a href="./Settings.html">
+            <button class="bt1"><img id="setting-image" src="./newsetting.PNG" alt=""><h3 id="setting-image-p">Settings</h3></button>
+        </a>
+        <a href="./MessageUserProfile.html"><button class="bt1"><img id="setting-image" src="./messageicon.PNG" alt=""><h3 id="setting-image-p">Messages</h3></button></a>
+
+        <a href="./earn.html">
+            <button class="bt1"><img id="setting-image" src="./humanlogo.PNG" alt=""><h3 id="setting-image-p">Earn by driving or delivering</h3></button>
+        </a>
+        <a href="./Userprodel.html"><button class="bt1"><img id="setting-image" src="./heartlogo.PNG" alt=""><h3 id="setting-image-p">Uber Eat Favourites</h3></button></a>
+
+
+        <a href="./legal.html"><button class="bt1"><img id="setting-image" src="./iconlogo.PNG" alt=""><h3 id="setting-image-p">Legal</h3></button></a>
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>
